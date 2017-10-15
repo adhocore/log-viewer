@@ -1,0 +1,116 @@
+/**
+ * @package logviewer
+ * @author  Jitendra Adhikari <jiten.adhikary at gmail dot com>
+ */
+.container {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #000;
+  padding: 2%;
+}
+
+.top {
+    margin-bottom: 4%;
+}
+
+.top input {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.top input.text {
+  width: 78%;
+  float: left;
+}
+
+.top input.text:focus {
+  outline: none;
+  border: 1px solid #66AFE9;
+}
+
+.top input.btn {
+  width: 18%;
+  float: right;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback .error {
+  color: #A11;
+}
+
+.content {
+  display: table;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.content .row {
+  display: table-row;
+  width: 100%;
+}
+
+.content .col {
+  display: table-cell;
+  padding: 10px;
+}
+
+.content .offset {
+  background-color: #EEE;
+  border-right: 1px solid #000;
+  text-align: right;
+  padding: 10px 15px;
+  width: 5%;
+}
+
+.content .body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.clear {
+  clear: both;
+}
+
+.nav {
+  margin-top: 25px;
+}
+
+.nav .inline {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.nav .inline li {
+  width: 24.8%;
+  float: left;
+  display: inline-block;
+  border: 1px solid #D1D1D1;
+  border-right: none;
+  padding: 5px 0;
+}
+
+.nav .inline li:first-child {
+  border-bottom-left-radius: .25rem;
+  border-top-left-radius: .25rem;
+}
+
+.nav .inline li:last-child {
+  border-bottom-right-radius: .25rem;
+  border-top-right-radius: .25rem;
+  border-right: 1px solid #D1D1D1;
+}
+
+.nav .inline li a {
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
+
+.nav .disabled li a {
+  cursor: not-allowed;
+}

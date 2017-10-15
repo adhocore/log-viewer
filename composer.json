@@ -1,0 +1,37 @@
+{
+    "name": "adhocore/log-viewer",
+    "description": "Simple log viewer app built with Lumen framework and VueJS.",
+    "keywords": ["log", "log-viewer", "lumen", "vuejs"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/lumen-framework": "5.5.*",
+        "vlucas/phpdotenv": "~2.2"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~6.0",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ahc\\": "src/",
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/",
+            "database/"
+        ]
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "php -r \"is_file('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "optimize-autoloader": true
+}
