@@ -68,15 +68,18 @@ class Reader implements ReaderInterface
         $this->offset = $offset;
 
         $data = [];
-        while ($batchSize--) {
-            // The handler uses 0 based key.
-            $this->handler->seek($offset - 1);
 
+        // The handler uses 0 based key.
+        $this->handler->seek($offset - 1);
+
+        while ($batchSize--) {
             $data[] = new Item($offset++, $this->handler->current());
 
-            if (!$this->hasNext()) {
+            if (!$this->handler->valid()) {
                 break;
             }
+
+            $this->handler->next();
         }
 
         return $data;
