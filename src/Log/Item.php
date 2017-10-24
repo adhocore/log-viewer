@@ -3,7 +3,6 @@
 namespace Ahc\Log;
 
 /**
- * @package logviewer
  * @author  Jitendra Adhikari <jiten.adhikary at gmail dot com>
  */
 class Item implements ItemInterface
@@ -27,7 +26,6 @@ class Item implements ItemInterface
     {
         return $this->offset;
     }
-
 
     /**
      * {@inheritdoc}

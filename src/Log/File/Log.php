@@ -2,11 +2,10 @@
 
 namespace Ahc\Log\File;
 
-use Ahc\Log\LogInterface;
 use Ahc\Log\Exception\InvalidPathException;
+use Ahc\Log\LogInterface;
 
 /**
- * @package logviewer
  * @author  Jitendra Adhikari <jiten.adhikary at gmail dot com>
  */
 class Log implements LogInterface
@@ -103,7 +102,7 @@ class Log implements LogInterface
     /**
      * Platform agnostic absolute path detection.
      *
-     * @param  string  $path
+     * @param string $path
      *
      * @return bool
      */
@@ -119,7 +118,7 @@ class Log implements LogInterface
     /**
      * Check if given path falls under allowed path.
      *
-     * @param  string  $path
+     * @param string $path
      *
      * @return bool
      */

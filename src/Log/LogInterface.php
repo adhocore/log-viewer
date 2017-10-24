@@ -3,7 +3,6 @@
 namespace Ahc\Log;
 
 /**
- * @package logviewer
  * @author  Jitendra Adhikari <jiten.adhikary at gmail dot com>
  */
 interface LogInterface

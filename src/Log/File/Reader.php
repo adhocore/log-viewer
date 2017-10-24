@@ -7,7 +7,6 @@ use Ahc\Log\LogInterface;
 use Ahc\Log\ReaderInterface;
 
 /**
- * @package logviewer
  * @author  Jitendra Adhikari <jiten.adhikary at gmail dot com>
  */
 class Reader implements ReaderInterface

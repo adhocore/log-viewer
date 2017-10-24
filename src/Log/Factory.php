@@ -7,7 +7,6 @@ use Ahc\Log\File\Log as FileLog;
 use Ahc\Log\File\Reader as FileReader;
 
 /**
- * @package logviewer
  * @author  Jitendra Adhikari <jiten.adhikary at gmail dot com>
  */
 class Factory
@@ -19,9 +18,9 @@ class Factory
     /**
      * Create reader instance using given arguments.
      *
-     * @param  string      $type
-     * @param  string      $path
-     * @param  string|null $allowedPath
+     * @param string      $type
+     * @param string      $path
+     * @param string|null $allowedPath
      *
      * @return ReaderInterface
      */

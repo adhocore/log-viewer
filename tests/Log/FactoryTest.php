@@ -16,7 +16,7 @@ class FactoryTest extends TestCase
 
     /**
      * @expectedException \Ahc\Log\Exception\InvalidTypeException
-     * @expectedExceptionMessage Type "n/a" not yet implemented 
+     * @expectedExceptionMessage Type "n/a" not yet implemented
      */
     public function testCreateReaderThrows()
     {
