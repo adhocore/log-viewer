@@ -7,7 +7,7 @@
  */
 
 if (!is_file(__DIR__ . '/../vendor/autoload.php')) {
-	exit('<p>Please run <code>composer install</code> in CLI from the root of this project</p>');
+    exit('<p>Please run <code>composer install</code> in CLI from the root of this project</p>');
 }
 
 /*
@@ -20,7 +20,7 @@ if (!is_file(__DIR__ . '/../vendor/autoload.php')) {
 | is ready to receive HTTP / Console requests from the environment.
 |
 */
-$app = require __DIR__.'/../bootstrap/app.php';
+$app = require __DIR__ . '/../bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------

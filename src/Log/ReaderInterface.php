@@ -3,7 +3,6 @@
 namespace Ahc\Log;
 
 /**
- * @package logviewer
  * @author  Jitendra Adhikari <jiten.adhikary at gmail dot com>
  */
 interface ReaderInterface
@@ -18,8 +17,8 @@ interface ReaderInterface
     /**
      * Read and return the log data as per the underlying the Log instance.
      *
-     * @param  int  $offset     The start line/index number (1 based). Use -1 to rewind to last.
-     * @param  int  $batchSize  The total number of log items to read in a go.
+     * @param int $offset    The start line/index number (1 based). Use -1 to rewind to last.
+     * @param int $batchSize The total number of log items to read in a go.
      *
      * @return array|LogItem[] Array of LogItem.
      */
@@ -35,7 +34,7 @@ interface ReaderInterface
     /**
      * Get the beginning offset for the end most chunk of logs.
      *
-     * @param  int $batchSize  The total number of log items to read in a go.
+     * @param int $batchSize The total number of log items to read in a go.
      *
      * @return int
      */

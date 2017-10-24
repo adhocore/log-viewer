@@ -1,7 +1,5 @@
 <?php
 
-use Laravel\Lumen\Testing\DatabaseMigrations;
-use Laravel\Lumen\Testing\DatabaseTransactions;
 
 /**
  * Test the endpoints are up.
@@ -28,7 +26,7 @@ class FunctionalTest extends TestCase
 
     public function testFetchLogUrl()
     {
-        $file   = realpath(__DIR__.'/stub/log.log');
+        $file   = realpath(__DIR__ . '/stub/log.log');
         $expect = file($file, FILE_IGNORE_NEW_LINES);
 
         putenv('LOG_PATH=tests/stub');

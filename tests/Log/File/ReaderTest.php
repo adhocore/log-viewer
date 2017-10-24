@@ -1,10 +1,10 @@
 <?php
 
+use Ahc\Log\File\Log;
+use Ahc\Log\File\Reader;
 use Ahc\Log\ItemInterface;
 use Ahc\Log\LogInterface;
 use Ahc\Log\ReaderInterface;
-use Ahc\Log\File\Log;
-use Ahc\Log\File\Reader;
 
 class ReaderTest extends TestCase
 {

@@ -45,5 +45,5 @@ class ItemTest extends TestCase
     protected function newItem(int $offset, string $body)
     {
         return new Item($offset, $body);
-    }	
+    }
 }
