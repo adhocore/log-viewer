@@ -1,9 +1,12 @@
 <?php
 
 /*
- |---------------
- | Sanity checks
- |---------------
+ * This file is part of the LOG-VIEWER package.
+ *
+ * (c) Jitendra Adhikari <jiten.adhikary@gmail.com>
+ *     <https//:github.com/adhocore>
+ *
+ * Licensed under MIT license.
  */
 
 if (!is_file(__DIR__ . '/../vendor/autoload.php')) {

@@ -1,9 +1,14 @@
 <?php
 
-
-/**
- * Test the endpoints are up.
+/*
+ * This file is part of the LOG-VIEWER package.
+ *
+ * (c) Jitendra Adhikari <jiten.adhikary@gmail.com>
+ *     <https//:github.com/adhocore>
+ *
+ * Licensed under MIT license.
  */
+
 class FunctionalTest extends TestCase
 {
     public function testRootUrl()
