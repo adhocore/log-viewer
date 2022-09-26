@@ -9,7 +9,7 @@
  * Licensed under MIT license.
  */
 
-$router->get('/', function () use ($router) {
+$router->get('/', function () {
     // Since we have nothing here, just redirect to log view landing page.
     return redirect()->to(route('log.landing'));
 });
